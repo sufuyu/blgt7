@@ -1,0 +1,394 @@
+2017-04-13 16:10:33 [127.0.0.1][156][08tmea7ti9ot1n3cskjcq13kl2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "housetype/index".' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('housetype/index', Array)
+#1 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2017-04-13 16:45:48 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '一室' (T_STRING), expecting ')'' in D:\phpStudy\WWW\balegetu\backend\models\House.php:181
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-13 16:46:46 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '99' (T_LNUMBER), expecting ')'' in D:\phpStudy\WWW\balegetu\backend\models\House.php:205
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-13 16:54:35 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '14', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '15', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '16', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '17', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '18', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '19', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '20', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '21', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '4', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '5', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '6', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '7', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '8', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '22', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '23', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35'), ('1', '', 'admin', '2017-04-13 16:54:35', 'admin', '2017-04-13 16:54:35')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:54:42 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '14', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '15', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '16', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '17', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '18', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '19', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '20', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '21', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '4', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '5', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '6', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '7', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '8', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '22', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '23', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42'), ('1', '', 'admin', '2017-04-13 16:54:42', 'admin', '2017-04-13 16:54:42')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:55:00 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '14', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '15', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '16', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '17', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '18', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '19', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '20', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '21', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '4', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '5', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '6', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '7', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '8', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00'), ('1', '', 'admin', '2017-04-13 16:55:00', 'admin', '2017-04-13 16:55:00')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:55:08 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '14', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '15', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '16', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '17', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '18', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '19', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '20', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '21', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '4', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '5', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '6', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '7', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '8', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08'), ('1', '', 'admin', '2017-04-13 16:55:08', 'admin', '2017-04-13 16:55:08')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:55:35 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '2', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '2')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('2', '13', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '14', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '15', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '16', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '17', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '18', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '19', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '20', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '21', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '4', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '5', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '6', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '7', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '8', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '22', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '23', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35'), ('2', '', 'admin', '2017-04-13 16:55:35', 'admin', '2017-04-13 16:55:35')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '2', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '2')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:56:50 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '14', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '15', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '16', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '17', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '18', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '19', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '20', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '21', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '4', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '5', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '6', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '7', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '8', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '22', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50'), ('1', '', 'admin', '2017-04-13 16:56:50', 'admin', '2017-04-13 16:56:50')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:56:54 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '14', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '15', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '16', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '17', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '18', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '19', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '20', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '21', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '4', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '5', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '6', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '7', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '8', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '22', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54'), ('1', '', 'admin', '2017-04-13 16:56:54', 'admin', '2017-04-13 16:56:54')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:57:55 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '14', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '15', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '16', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '17', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '18', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '19', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '20', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '21', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '4', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '5', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '6', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '7', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '8', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '22', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '23', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55'), ('1', '', 'admin', '2017-04-13 16:57:55', 'admin', '2017-04-13 16:57:55')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 16:58:12 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '14', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '15', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '16', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '17', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '18', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '19', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '20', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '21', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '4', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '5', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '6', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '7', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '8', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12'), ('1', '', 'admin', '2017-04-13 16:58:12', 'admin', '2017-04-13 16:58:12')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 17:01:15 [127.0.0.1][156][u2r8p8klsg46c8rc5c687hu2l6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `admin_role_right` (`role_id`, `right_id`, `create_user`, `create_date`, `update_user`, `update_date`) VALUES ('1', '13', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '14', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '15', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '16', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '17', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '18', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '19', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '20', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '21', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '4', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '5', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '6', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '7', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '8', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '22', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '23', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15'), ('1', '24', 'admin', '2017-04-13 17:01:15', 'admin', '2017-04-13 17:01:15')' in D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 D:\phpStudy\WWW\balegetu\backend\services\AdminRoleRightService.php(31): yii\db\Command->execute()
+#2 D:\phpStudy\WWW\balegetu\backend\controllers\AdminRoleController.php(236): backend\services\AdminRoleRightService->saveRights(Array, '1', 'admin')
+#3 [internal function]: backend\controllers\AdminRoleController->actionSaveRights(Array, '1')
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('save-rights', Array)
+#7 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('admin-role/save...', Array)
+#8 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`blt_product`.`admin_role_right`, CONSTRAINT `admin_role_right_ibfk_1` FOREIGN KEY (`right_id`) REFERENCES `admin_right` (`id`) ON DELETE CASCADE)
+)
+
+2017-04-13 17:01:43 [127.0.0.1][156][ttr2hksq3te1sr0fkj2m6vfo34][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: house/index' in D:\phpStudy\WWW\balegetu\backend\controllers\BaseController.php:45
+Stack trace:
+#0 D:\phpStudy\WWW\balegetu\backend\controllers\BaseController.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\phpStudy\\WWW...', 45, Array)
+#1 D:\phpStudy\WWW\balegetu\backend\controllers\BaseController.php(20): backend\controllers\BaseController->verifyPermission(Object(yii\base\InlineAction))
+#2 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\BaseController->beforeAction(Object(yii\base\InlineAction))
+#3 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#4 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('house/index', Array)
+#5 D:\phpStudy\WWW\balegetu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\phpStudy\WWW\balegetu\backend\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-13 18:57:22 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '已看房' (T_STRING), expecting ')'' in D:\phpStudy\WWW\balegetu\backend\models\Order.php:221
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
